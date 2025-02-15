@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="text-center p-6">
+      <h1 class="text-4xl font-bold">¡Hola, soy Jose Vicente Ebri Gómez!</h1>
+      <p class="text-lg mt-2">Fullstack Developer</p>
+      <p>[React, Next.js, Node.js, Express, MongoDB, PostgreSQL]</p>
+    </header>
+
+    <section id="portfolio" class="flex justify-center items-center h-screen">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold">Bienvenido a mi Portfolio</h2>
+        <p class="mt-4 text-lg">Animaciones con GSAP y diseño con Tailwind</p>
+        <button
+          id="animar"
+          class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg"
+        >
+          ¡Haz click!
+        </button>
+      </div>
+    </section>
+
+    <!-- GSAP y script.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
