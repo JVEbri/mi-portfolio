@@ -1,0 +1,14 @@
+{
+  "name": "Jose Vicente Ebri Gómez",
+  "role": "Frontend Developer",
+  "location": "Valencia, España",
+  "summary": [
+    "Apasionado del diseño UI/UX y animaciones con GSAP.",
+    "Experiencia fullstack, pero enfocado en frontend moderno con Tailwind.",
+    "Esquema de color cian/negro por su contraste y legibilidad."
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/tu-usuario" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/tu-perfil" }
+  ]
+}

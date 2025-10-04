@@ -1,0 +1,13 @@
+{
+  "name": "Jose Vicente Ebri Gómez",
+  "role": "Desarrollador de Aplicaciones Web",
+  "location": "España",
+  "summary": [
+    "Desarrollador frontend especializado en React y Next.js con experiencia en crear interfaces modernas y funcionales.",
+    "Apasionado por las animaciones web y la optimización de rendimiento para ofrecer la mejor experiencia de usuario."
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/josevicente" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/josevicente" }
+  ]
+}

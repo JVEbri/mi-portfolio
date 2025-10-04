@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Multitenant en plataforma SaaS",
+    "period": "2023",
+    "description": "Diseño e implementación de arquitectura multitenant, separación de datos y aislamiento de recursos.",
+    "tech": ["Node.js", "PostgreSQL", "Docker"]
+  },
+  {
+    "title": "Desarrollo web para cliente X",
+    "period": "2022",
+    "description": "Landing responsiva con animaciones, optimización de performance y accesibilidad.",
+    "tech": ["React", "Tailwind", "GSAP"]
+  },
+  {
+    "title": "Proyecto interno de dashboards",
+    "period": "2021",
+    "description": "Dashboards interactivos con gráficos dinámicos y filtros en tiempo real.",
+    "tech": ["Next.js", "Chart.js", "API REST"]
+  }
+]

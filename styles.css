@@ -1,0 +1,35 @@
+/* Estilos base complementarios */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejor foco accesible */
+:focus-visible {
+  outline: 2px solid #06b6d4; /* cyan-500 */
+  outline-offset: 2px;
+}
+
+/* Ocultar scrollbar en navegadores soportados (mantener scroll accesible) */
+/* Scrollbar personalizado (opcional y accesible) */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0e7490 #111827;
+}
+/* WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0e7490;
+  border-radius: 8px;
+}
+
+/* Utilidad para asegurar filas iguales en grids */
+.auto-rows-fr {
+  grid-auto-rows: 1fr;
+}

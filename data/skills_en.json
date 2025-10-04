@@ -1,0 +1,10 @@
+[
+  { "name": "React", "level": "Advanced", "category": "Frontend" },
+  { "name": "Next.js", "level": "Intermediate", "category": "Frontend" },
+  { "name": "Tailwind", "level": "Advanced", "category": "Styling" },
+  { "name": "GSAP", "level": "Intermediate", "category": "Animations" },
+  { "name": "Node.js", "level": "Intermediate", "category": "Backend" },
+  { "name": "Express", "level": "Intermediate", "category": "Backend" },
+  { "name": "MongoDB", "level": "Intermediate", "category": "Database" },
+  { "name": "PostgreSQL", "level": "Intermediate", "category": "Database" }
+]

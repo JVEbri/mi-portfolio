@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Multitenant SaaS Platform",
+    "period": "2023",
+    "description": "Design and implementation of multitenant architecture, data separation and resource isolation.",
+    "tech": ["Node.js", "PostgreSQL", "Docker"]
+  },
+  {
+    "title": "Web Development for Client X",
+    "period": "2022",
+    "description": "Responsive landing page with animations, performance optimization and accessibility.",
+    "tech": ["React", "Tailwind", "GSAP"]
+  }
+]
