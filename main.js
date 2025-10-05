@@ -1,5 +1,107 @@
 console.log('🚀 main.js cargado correctamente - TODO CONSOLIDADO');
 
+// ===== DATOS EMBEBIDOS PARA GITHUB PAGES =====
+const DATA = {
+  about: {
+    es: {
+      "name": "Jose Vicente Ebri Gómez",
+      "role": "Desarrollador de Aplicaciones Web",
+      "summary": [
+        "Mi pasión por la tecnología comenzó desde pequeño, cuando mi padre me enseñaba los primeros pasos en su Pentium 1. Desde 2024 me dedico profesionalmente al desarrollo web, impulsado por una curiosidad constante y el amor por aprender algo nuevo cada día.",
+        "En esta era donde la inteligencia artificial transforma nuestra industria, me enfoco en encontrar las mejores soluciones para cada situación, combinando creatividad humana con herramientas innovadoras. Me encanta trabajar en equipo, crecer junto a mis compañeros y asegurarme de que las cosas se hagan bien.",
+        "Cuando no estoy programando, disfruto del cine y los videojuegos, aficiones que alimentan mi creatividad y me inspiran en mis proyectos. Creo firmemente que nunca se deja de aprender en este campo, y esa es precisamente la razón por la que amo lo que hago."
+      ],
+      "links": [
+        { "name": "GitHub", "url": "https://github.com/JVEbri", "icon": "github" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/in/jose-vicente-ebri-gomez-25a11a273", "icon": "linkedin" }
+      ]
+    },
+    en: {
+      "name": "Jose Vicente Ebri Gómez",
+      "role": "Web Application Developer",
+      "summary": [
+        "My passion for technology began as a child, when my father taught me the first steps on his Pentium 1. Since 2024, I've been professionally dedicated to web development, driven by constant curiosity and a love for learning something new every day.",
+        "In this era where artificial intelligence is transforming our industry, I focus on finding the best solutions for each situation, combining human creativity with innovative tools. I love working in teams, growing alongside my colleagues, and ensuring things are done right.",
+        "When I'm not coding, I enjoy cinema and video games, hobbies that fuel my creativity and inspire my projects. I firmly believe that you never stop learning in this field, and that's precisely why I love what I do."
+      ],
+      "links": [
+        { "name": "GitHub", "url": "https://github.com/JVEbri", "icon": "github" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/in/jose-vicente-ebri-gomez-25a11a273", "icon": "linkedin" }
+      ]
+    }
+  },
+  experiences: {
+    es: [
+      {
+        "position": "Desarrollador Full Stack",
+        "company": "Gestión de APIs",
+        "period": "2024 - Presente",
+        "description": "Desarrollo de aplicación integral para gestionar el ciclo de vida completo de APIs, incluyendo implementación de pipelines CI/CD automatizados, validación de endpoints y monitoreo de rendimiento.",
+        "technologies": ["React", "NestJS", "REST", "PostgreSQL", "CI/CD"]
+      },
+      {
+        "position": "Desarrollador Backend",
+        "company": "Solución Multi-tenant",
+        "period": "2024",
+        "description": "Implementación de arquitectura multi-tenant robusta para cliente corporativo utilizando WSO2 API Manager, diseñando APIs RESTful escalables y optimizando la gestión de bases de datos.",
+        "technologies": ["Express.js", "PostgreSQL", "REST", "WSO2 API Manager"]
+      },
+      {
+        "position": "Desarrollador Full Stack",
+        "company": "Plataforma de Certificación",
+        "period": "2024",
+        "description": "Desarrollo de plataforma automatizada para la generación y gestión de certificados digitales, implementando flujos de trabajo eficientes y interfaces de usuario intuitivas.",
+        "technologies": ["Next.js", "Django", "PostgreSQL", "Automatización"]
+      }
+    ],
+    en: [
+      {
+        "position": "Full Stack Developer",
+        "company": "API Management",
+        "period": "2024 - Present",
+        "description": "Development of comprehensive application for managing complete API lifecycle, including automated CI/CD pipelines implementation, endpoint validation and performance monitoring.",
+        "technologies": ["React", "NestJS", "REST", "PostgreSQL", "CI/CD"]
+      },
+      {
+        "position": "Backend Developer",
+        "company": "Multi-tenant Solution",
+        "period": "2024",
+        "description": "Implementation of robust multi-tenant architecture for corporate client using WSO2 API Manager, designing scalable RESTful APIs and optimizing database management.",
+        "technologies": ["Express.js", "PostgreSQL", "REST", "WSO2 API Manager"]
+      },
+      {
+        "position": "Full Stack Developer",
+        "company": "Certification Platform",
+        "period": "2024",
+        "description": "Development of automated platform for digital certificate generation and management, implementing efficient workflows and intuitive user interfaces.",
+        "technologies": ["Next.js", "Django", "PostgreSQL", "Automation"]
+      }
+    ]
+  },
+  skills: {
+    es: [
+      { "name": "React", "level": "Avanzado", "category": "Frontend", "percentage": 95 },
+      { "name": "Node.js", "level": "Intermedio", "category": "Backend", "percentage": 90 },
+      { "name": "Tailwind", "level": "Avanzado", "category": "Estilos", "percentage": 90 },
+      { "name": "Nest.js", "level": "Intermedio", "category": "Backend", "percentage": 90 },
+      { "name": "PostgreSQL", "level": "Intermedio", "category": "Base de datos", "percentage": 85 },
+      { "name": "Next.js", "level": "Intermedio", "category": "Frontend", "percentage": 80 },
+      { "name": "Express", "level": "Intermedio", "category": "Backend", "percentage": 75 },
+      { "name": "MongoDB", "level": "Intermedio", "category": "Base de datos", "percentage": 70 }
+    ],
+    en: [
+      { "name": "React", "level": "Advanced", "category": "Frontend", "percentage": 100 },
+      { "name": "Tailwind", "level": "Advanced", "category": "Styles", "percentage": 100 },
+      { "name": "PostgreSQL", "level": "Intermediate", "category": "Database", "percentage": 100 },
+      { "name": "Node.js", "level": "Intermediate", "category": "Backend", "percentage": 90 },
+      { "name": "Nest.js", "level": "Intermediate", "category": "Backend", "percentage": 90 },
+      { "name": "Next.js", "level": "Intermediate", "category": "Frontend", "percentage": 80 },
+      { "name": "Express", "level": "Intermediate", "category": "Backend", "percentage": 50 },
+      { "name": "MongoDB", "level": "Intermediate", "category": "Database", "percentage": 30 }
+    ]
+  }
+};
+
 // ===== COMPONENTE ABOUT =====
 class AboutComponent {
   async render(lang = 'es') {
@@ -12,16 +114,11 @@ class AboutComponent {
     }
 
     try {
-      const response = await fetch(`./data/about_${lang}.json?t=${Date.now()}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
+      const data = DATA.about[lang];
       console.log('✅ AboutComponent: Datos cargados:', data);
       
       container.innerHTML = `
         <div class="mb-8">
-          <p class="text-lg text-cyan-400 mb-2 text-center">${data.location}</p>
           ${data.summary.map(paragraph => `<p class="text-gray-300 mb-4 text-left">${paragraph}</p>`).join('')}
         </div>
       `;
@@ -46,15 +143,8 @@ class ExperiencesComponent {
     }
 
     try {
-      const response = await fetch(`./data/experiences_${lang}.json?t=${Date.now()}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const rawText = await response.text();
-       console.log('🔍 ExperiencesComponent: Raw response:', rawText);
-       
-       const experiences = JSON.parse(rawText);
-       console.log('✅ ExperiencesComponent: Datos parseados:', experiences);
+       const experiences = DATA.experiences[lang];
+       console.log('✅ ExperiencesComponent: Datos cargados:', experiences);
        console.log('🔍 ExperiencesComponent: Es array?', Array.isArray(experiences));
        console.log('🔍 ExperiencesComponent: Tipo:', typeof experiences);
        
@@ -152,11 +242,7 @@ class SkillsComponent {
     }
 
     try {
-      const response = await fetch(`./data/skills_${lang}.json?t=${Date.now()}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const skills = await response.json();
+      const skills = DATA.skills[lang];
       console.log('✅ SkillsComponent: Datos cargados:', skills);
       
       if (!skills || skills.length === 0) {
@@ -351,11 +437,7 @@ class PortfolioApp {
   async renderHeader() {
     try {
       console.log('🔥 HEADER: Cargando datos...');
-      const response = await fetch(`data/about_${this.currentLang}.json?t=${Date.now()}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const about = await response.json();
+      const about = DATA.about[this.currentLang];
       console.log('✅ HEADER: Datos cargados:', about);
       
       // Renderizar nombre y rol en el header
