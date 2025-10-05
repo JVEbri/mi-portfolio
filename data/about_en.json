@@ -3,11 +3,12 @@
   "role": "Web Application Developer",
   "location": "Spain",
   "summary": [
-    "Frontend developer specialized in React and Next.js with experience creating modern and functional interfaces.",
-    "Passionate about web animations and performance optimization to deliver the best user experience."
+    "My passion for technology began as a child, when my father taught me the first steps on his Pentium 1. Since 2024, I've been professionally dedicated to web development, driven by constant curiosity and a love for learning something new every day.",
+    "In this era where artificial intelligence is transforming our industry, I focus on finding the best solutions for each situation, combining human creativity with innovative tools. I love working in teams, growing alongside my colleagues, and ensuring things are done right.",
+    "When I'm not coding, I enjoy cinema and video games, hobbies that fuel my creativity and inspire my projects. I firmly believe that you never stop learning in this field, and that's precisely why I love what I do."
   ],
   "links": [
-    { "label": "GitHub", "url": "https://github.com/josevicente" },
-    { "label": "LinkedIn", "url": "https://linkedin.com/in/josevicente" }
+    { "name": "GitHub", "url": "https://github.com/JVEbri", "icon": "github" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/jose-vicente-ebri-gomez-25a11a273", "icon": "linkedin" }
   ]
 }

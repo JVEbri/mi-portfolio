@@ -1,14 +1,20 @@
 [
   {
-    "title": "Multitenant SaaS Platform",
-    "period": "2023",
-    "description": "Design and implementation of multitenant architecture, data separation and resource isolation.",
-    "tech": ["Node.js", "PostgreSQL", "Docker"]
+    "title": "API Lifecycle Management Platform",
+    "period": "2024 - Present",
+    "description": "Development of comprehensive application for managing complete API lifecycle, including automated CI/CD pipelines implementation, endpoint validation and performance monitoring.",
+    "tech": ["React", "NestJS", "REST", "PostgreSQL", "CI/CD"]
   },
   {
-    "title": "Web Development for Client X",
-    "period": "2022",
-    "description": "Responsive landing page with animations, performance optimization and accessibility.",
-    "tech": ["React", "Tailwind", "GSAP"]
+    "title": "Multi-tenant Solution with WSO2",
+    "period": "2024",
+    "description": "Implementation of robust multi-tenant architecture for corporate client using WSO2 API Manager, designing scalable RESTful APIs and optimizing database management.",
+    "tech": ["Express.js", "PostgreSQL", "REST", "WSO2 API Manager"]
+  },
+  {
+    "title": "Automated Certificate Generation Platform",
+    "period": "2024",
+    "description": "Development of automated platform for digital certificate generation and management, implementing efficient workflows and intuitive user interfaces.",
+    "tech": ["Next.js", "Django", "PostgreSQL", "Automation"]
   }
 ]

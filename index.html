@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portfolio</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-gray-900 text-white">
@@ -13,53 +15,92 @@
       <div class="max-w-6xl mx-auto px-6 py-4">
         <div class="flex justify-center items-center relative">
           <div class="flex items-center gap-6">
-            <a href="#" class="text-xl font-bold text-cyan-400 mr-8" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="#" class="text-xl font-bold text-cyan-400 mr-8">Inicio</a>
             <div class="flex items-center gap-4 text-sm">
-              <a href="#about" class="text-gray-300 hover:text-cyan-400" data-es="Sobre mí" data-en="About">Sobre mí</a>
-              <a href="#experiences" class="text-gray-300 hover:text-cyan-400" data-es="Experiencias" data-en="Experience">Experiencias</a>
-              <a href="#projects" class="text-gray-300 hover:text-cyan-400" data-es="Proyectos" data-en="Projects">Proyectos</a>
+              <a href="#skills" class="text-gray-300 hover:text-cyan-400"
+                >Habilidades</a
+              >
+              <a href="#about" class="text-gray-300 hover:text-cyan-400"
+                >Sobre mí</a
+              >
+              <a href="#experiences" class="text-gray-300 hover:text-cyan-400"
+                >Experiencias</a
+              >
+              <a href="#projects" class="text-gray-300 hover:text-cyan-400"
+                >Proyectos</a
+              >
             </div>
           </div>
           <div class="absolute right-0 flex gap-2">
-            <button id="lang-es" class="px-2 py-1 text-xs rounded bg-cyan-600 text-white">ES</button>
-            <button id="lang-en" class="px-2 py-1 text-xs rounded bg-gray-700 text-gray-300 hover:bg-gray-600">EN</button>
+            <button
+              id="lang-es"
+              class="lang-btn px-2 py-1 text-xs rounded bg-cyan-600 text-white"
+              onclick="switchLanguage('es')"
+            >
+              ES
+            </button>
+            <button
+              id="lang-en"
+              class="lang-btn px-2 py-1 text-xs rounded bg-gray-700 text-gray-300 hover:bg-gray-600"
+              onclick="switchLanguage('en')"
+            >
+              EN
+            </button>
           </div>
         </div>
       </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 py-12">
+    <header class="max-w-6xl mx-auto px-6 py-8">
       <div class="text-center mb-8">
-        <div class="w-20 h-20 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-cyan-500/20">
+        <div
+          class="w-20 h-20 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-cyan-500/20"
+        >
           <div class="w-6 h-6 rounded-full bg-cyan-300"></div>
         </div>
-        <h1 id="header-name" class="text-2xl lg:text-3xl font-bold text-white mb-2">Jose Vicente Ebri Gómez</h1>
-        <p id="header-role" class="text-lg text-cyan-400 font-medium mb-4">Desarrollador de Aplicaciones Web</p>
-        <div id="header-links" class="flex gap-3 flex-wrap justify-center mb-6"></div>
-        <div id="header-skills" class="flex gap-2 flex-wrap justify-center"></div>
+        <h1
+          id="header-name"
+          class="text-2xl lg:text-3xl font-bold text-white mb-2"
+        >
+          Jose Vicente Ebri Gómez
+        </h1>
+        <p id="header-role" class="text-lg text-cyan-400 font-medium mb-4">
+          Desarrollador de Aplicaciones Web
+        </p>
+        <div id="header-content"></div>
+        <div
+          id="header-links"
+          class="flex gap-3 flex-wrap justify-center mb-8"
+        ></div>
       </div>
     </header>
 
+    <section id="skills" class="max-w-5xl mx-auto py-8 px-6 scroll-mt-24">
+      <div id="skills-container" class="mt-6"></div>
+    </section>
+
     <section id="about" class="max-w-5xl mx-auto py-16 px-6 scroll-mt-24">
-      <h2 class="text-2xl font-semibold text-cyan-400" data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+      <h2 class="text-2xl font-semibold text-cyan-400">Sobre mí</h2>
       <div id="about-content" class="mt-6 space-y-4"></div>
     </section>
 
     <section id="experiences" class="max-w-5xl mx-auto py-16 px-6 scroll-mt-24">
-      <h2 class="text-2xl font-semibold text-cyan-400" data-es="Experiencias" data-en="Experience">Experiencias</h2>
-      <div id="experiences-list" class="mt-8 grid gap-6 sm:grid-cols-2 auto-rows-fr"></div>
+      <h2 class="text-2xl font-semibold text-cyan-400">Experiencias</h2>
+      <div
+        id="experiences-list"
+        class="mt-8 grid gap-6 sm:grid-cols-2 auto-rows-fr"
+      ></div>
     </section>
 
     <section id="projects" class="max-w-5xl mx-auto py-16 px-6 scroll-mt-24">
-      <h2 class="text-2xl font-semibold text-cyan-400" data-es="Proyectos" data-en="Projects">Proyectos</h2>
-      <p class="mt-4 text-gray-300" data-es="Próximamente..." data-en="Coming soon...">Próximamente...</p>
+      <h2 class="text-2xl font-semibold text-cyan-400">Proyectos</h2>
+      <p class="mt-4 text-gray-300">Próximamente...</p>
     </section>
 
-
-
-    <!-- GSAP y script.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+      // El contenido se renderiza a través de los componentes en main.js
+      console.log('📄 index.html cargado - Los componentes se inicializarán desde main.js');
+    </script>
     <script src="main.js"></script>
   </body>
-  </html>
+</html>

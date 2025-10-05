@@ -3,11 +3,12 @@
   "role": "Desarrollador de Aplicaciones Web",
   "location": "España",
   "summary": [
-    "Desarrollador frontend especializado en React y Next.js con experiencia en crear interfaces modernas y funcionales.",
-    "Apasionado por las animaciones web y la optimización de rendimiento para ofrecer la mejor experiencia de usuario."
+    "Mi pasión por la tecnología comenzó desde pequeño, cuando mi padre me enseñaba los primeros pasos en su Pentium 1. Desde 2024 me dedico profesionalmente al desarrollo web, impulsado por una curiosidad constante y el amor por aprender algo nuevo cada día.",
+    "En esta era donde la inteligencia artificial transforma nuestra industria, me enfoco en encontrar las mejores soluciones para cada situación, combinando creatividad humana con herramientas innovadoras. Me encanta trabajar en equipo, crecer junto a mis compañeros y asegurarme de que las cosas se hagan bien.",
+    "Cuando no estoy programando, disfruto del cine y los videojuegos, aficiones que alimentan mi creatividad y me inspiran en mis proyectos. Creo firmemente que nunca se deja de aprender en este campo, y esa es precisamente la razón por la que amo lo que hago."
   ],
   "links": [
-    { "label": "GitHub", "url": "https://github.com/josevicente" },
-    { "label": "LinkedIn", "url": "https://linkedin.com/in/josevicente" }
+    { "name": "GitHub", "url": "https://github.com/JVEbri", "icon": "github" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/jose-vicente-ebri-gomez-25a11a273", "icon": "linkedin" }
   ]
 }

@@ -1,14 +1,23 @@
 [
   {
-    "title": "Multitenant en plataforma SaaS",
-    "period": "2023",
-    "description": "Diseño e implementación de arquitectura multitenant, separación de datos y aislamiento de recursos.",
-    "tech": ["Node.js", "PostgreSQL", "Docker"]
+    "position": "Desarrollador Full Stack",
+    "company": "Gestión de APIs",
+    "period": "2024 - Presente",
+    "description": "Desarrollo de aplicación integral para gestionar el ciclo de vida completo de APIs, incluyendo implementación de pipelines CI/CD automatizados, validación de endpoints y monitoreo de rendimiento.",
+    "technologies": ["React", "NestJS", "REST", "PostgreSQL", "CI/CD"]
   },
   {
-    "title": "Desarrollo web para cliente X",
-    "period": "2022",
-    "description": "Landing responsiva con animaciones, optimización de performance y accesibilidad.",
-    "tech": ["React", "Tailwind", "GSAP"]
+    "position": "Desarrollador Backend",
+    "company": "Solución Multi-tenant",
+    "period": "2024",
+    "description": "Implementación de arquitectura multi-tenant robusta para cliente corporativo utilizando WSO2 API Manager, diseñando APIs RESTful escalables y optimizando la gestión de bases de datos.",
+    "technologies": ["Express.js", "PostgreSQL", "REST", "WSO2 API Manager"]
+  },
+  {
+    "position": "Desarrollador Full Stack",
+    "company": "Plataforma de Certificación",
+    "period": "2024",
+    "description": "Desarrollo de plataforma automatizada para la generación y gestión de certificados digitales, implementando flujos de trabajo eficientes y interfaces de usuario intuitivas.",
+    "technologies": ["Next.js", "Django", "PostgreSQL", "Automatización"]
   }
 ]

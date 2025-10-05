@@ -1,10 +1,10 @@
 [
-  { "name": "React", "level": "Advanced", "category": "Frontend" },
-  { "name": "Next.js", "level": "Intermediate", "category": "Frontend" },
-  { "name": "Tailwind", "level": "Advanced", "category": "Styling" },
-  { "name": "GSAP", "level": "Intermediate", "category": "Animations" },
-  { "name": "Node.js", "level": "Intermediate", "category": "Backend" },
-  { "name": "Express", "level": "Intermediate", "category": "Backend" },
-  { "name": "MongoDB", "level": "Intermediate", "category": "Database" },
-  { "name": "PostgreSQL", "level": "Intermediate", "category": "Database" }
+  { "name": "React", "level": "Advanced", "category": "Frontend", "percentage": 100 },
+  { "name": "Tailwind", "level": "Advanced", "category": "Styles", "percentage": 100 },
+  { "name": "PostgreSQL", "level": "Intermediate", "category": "Database", "percentage": 100 },
+  { "name": "Node.js", "level": "Intermediate", "category": "Backend", "percentage": 90 },
+  { "name": "Nest.js", "level": "Intermediate", "category": "Backend", "percentage": 90 },
+  { "name": "Next.js", "level": "Intermediate", "category": "Frontend", "percentage": 80 },
+  { "name": "Express", "level": "Intermediate", "category": "Backend", "percentage": 50 },
+  { "name": "MongoDB", "level": "Intermediate", "category": "Database", "percentage": 30 }
 ]
